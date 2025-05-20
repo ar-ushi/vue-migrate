@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { printInteractiveNotice } from "./copyRightInfo.js";
 import inquirer from "inquirer";
 import { convertMixin } from "./convert-mixin-utils.js";
