@@ -8,6 +8,12 @@
     "inquirer": "^12.6.1"
   },
   "bin": {
-    "vue-migrate": "./index.js"
+    "vue-migrate": "dist/index.js"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4"
   }
 }
