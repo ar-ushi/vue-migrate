@@ -1,5 +1,6 @@
 {
   "name": "vue-migrate",
+  "type": "module",
   "version": "1.0.0",
   "dependencies": {
     "@babel/generator": "^7.27.1",

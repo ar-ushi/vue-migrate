@@ -67550,9 +67550,9 @@ var inquirer = {
 var esm_default12 = inquirer;
 
 // convert-mixin-utils.js
-var import_parser = __toESM(require_lib3());
-var import_traverse = __toESM(require_lib10());
-var import_generator = __toESM(require_lib7());
+var import_parser = __toESM(require_lib3(), 1);
+var import_traverse = __toESM(require_lib10(), 1);
+var import_generator = __toESM(require_lib7(), 1);
 import fs from "fs";
 var exportables = [];
 async function convertMixin() {
