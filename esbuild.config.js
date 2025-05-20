@@ -6,7 +6,7 @@ await build({
   platform: "node",
   format: "cjs",
   target: ["node18"],
-  outfile: "dist/index.js",
+  outfile: "dist/index.cjs",
   banner: {
     js: "#!/usr/bin/env node",
   },

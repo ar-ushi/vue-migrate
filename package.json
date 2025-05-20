@@ -9,7 +9,7 @@
     "inquirer": "^12.6.1"
   },
   "bin": {
-    "vue-migrate": "dist/index.js"
+    "vue-migrate": "dist/index.cjs"
   },
   "scripts": {
     "build": "node esbuild.config.js"
