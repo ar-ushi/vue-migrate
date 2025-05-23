@@ -71104,15 +71104,8 @@ var require_lib18 = __commonJS({
 
 // copyRightInfo.js
 function printInteractiveNotice() {
-  const year = (/* @__PURE__ */ new Date()).getFullYear();
-  const author = "Arushi Aggarwal";
-  const program = "vue-migrate";
-  console.log(`${program}  Copyright (C) ${year}  ${author}`);
-  console.log(
-    "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
-  );
-  console.log("This is free software, and you are welcome to redistribute it");
-  console.log("under certain conditions; type `show c' for details.\n");
+  console.log("Vue Migrate simplifies Vue 2 to Vue 3 Conversion");
+  console.log("Copyright (C) 2025 Arushi Aggarwal");
 }
 
 // node_modules/@inquirer/core/dist/esm/lib/key.js
@@ -73504,7 +73497,7 @@ function registerPrompt(name, newPrompt) {
 function restoreDefaultPrompts() {
   prompt.restoreDefaultPrompts();
 }
-var inquirer2 = {
+var inquirer = {
   prompt,
   ui: {
     Prompt: PromptsRunner
@@ -73514,7 +73507,7 @@ var inquirer2 = {
   restoreDefaultPrompts,
   Separator
 };
-var esm_default12 = inquirer2;
+var esm_default12 = inquirer;
 
 // convert-mixin-utils.js
 var import_parser = __toESM(require_lib3(), 1);
@@ -73682,6 +73675,7 @@ var unifiedMappings = {
     variant: ["outlined", "filled", "solo"],
     "append-inner": "append",
     append: "append-outer",
+    "item-text": "item-title",
     location: ["top", "bottom", "left", "right"],
     "background-color": "bg-color",
     position: ["absolute", "fixed"],
@@ -73901,7 +73895,7 @@ ${root.toString()}
   console.log("Transformation complete!");
 }
 async function getInputPath2() {
-  return await inquirer.prompt([
+  return await esm_default12.prompt([
     {
       type: "input",
       name: "inputPath",
@@ -73911,7 +73905,7 @@ async function getInputPath2() {
   ]);
 }
 async function getOutputPath2() {
-  return await inquirer.prompt([
+  return await esm_default12.prompt([
     {
       type: "input",
       name: "outputPath",

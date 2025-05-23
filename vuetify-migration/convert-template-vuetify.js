@@ -2,6 +2,7 @@ import fs from "fs";
 import { parse } from "node-html-parser";
 import vueParser from "vue-parser";
 import { deprecatedComponents, unifiedMappings } from "./migrationMap.js";
+import inquirer from "inquirer";
 
 const foundDeprecatedComponents = new Set();
 
@@ -12,7 +13,6 @@ function applyMapping(node, mapping) {
   for (const name of attrNames) {
     const value = node.getAttribute(name);
 
-    // Handle event renaming (@ or v-on:)
     if (name.startsWith("@") || name.startsWith("v-on:")) {
       const eventName = name.replace(/^@|^v-on:/, "");
       const newEvent = mapping[eventName];

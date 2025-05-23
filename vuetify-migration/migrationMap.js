@@ -4,6 +4,7 @@ const unifiedMappings = {
     variant: ["outlined", "filled", "solo"],
     "append-inner": "append",
     append: "append-outer",
+    "item-text": "item-title",
     location: ["top", "bottom", "left", "right"],
     "background-color": "bg-color",
     position: ["absolute", "fixed"],
